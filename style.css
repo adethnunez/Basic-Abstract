@@ -267,7 +267,11 @@
   color: #000000;
   top:250px;
   right: 650px;
-}.banner .banner__wrapper .contact__form #search a{
+}
+  .banner__wrapper .contact__form a:hover i {
+    color: #4C5FD5;
+  }
+.banner .banner__wrapper .contact__form #search a{
   position: fixed;
 }
 @media screen and (max-width: 500px){
@@ -500,3 +504,28 @@
   align-items: center;
   justify-content: space-between;
 }
+  .help-banner .btn.violet{
+    position: fixed;
+    margin-top: 3rem;
+    margin-left: 120rem;
+    float: right;
+    border-radius: 5rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #f5f5f5;
+    background: #4C5FD5;
+    border: 1px solid #4C5FD5;
+    padding: .8rem 1.8rem;
+    align-items: center;
+  }
+
+  .help-banner .btn.violet:hover{
+    color: #ffffff;
+    background: #4C5FD5;
+    border: 1px solid #4C5FD5;
+  }
+
+  .help-banner .btn.violet i{
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
