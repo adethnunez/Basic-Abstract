@@ -207,6 +207,7 @@
       display: unset;
     }
     .header .header__nav ul{
+        z-index: 999;
         position: absolute;
         background: #000000;
         left: 0;
@@ -255,6 +256,8 @@
   font-size: 7.5rem;
   font-weight: 350;
 }
+
+
 .banner .banner__wrapper .contact__form #search{
   width: 40%;
   height: 7rem;
@@ -263,22 +266,35 @@
 }
 .banner__wrapper .contact__form  a i {
   position: absolute;
+  position: relative;
   font-size: 2.5rem;
   color: #000000;
-  top:250px;
-  right: 650px;
+  top:5px;
+  right: 65px;
 }
   .banner__wrapper .contact__form a:hover i {
     color: #4C5FD5;
   }
-.banner .banner__wrapper .contact__form #search a{
-  position: fixed;
+
+.banner .float-btn i {
+  padding-right: .5rem;
+  font-size: 1.9rem;
 }
+.banner .float-btn {
+  position: fixed;
+  float: right;
+  right: 2rem;
+  bottom: 1.5rem;
+
+}
+
 @media screen and (max-width: 500px){
 
   .banner{
     padding-top: 5rem;
     padding-bottom: 10rem ;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .banner__wrapper h1 {
     font-size: 3.4rem;
@@ -286,15 +302,15 @@
   }
 
   .banner .banner__wrapper .contact__form #search{
-    width: 100%;
-    height: 7rem;
+    width: 95%;
+    height: 5rem;
     font-size: 2rem;
     margin-top: 3rem;
   }
   .banner__wrapper .contact__form a i {
     position: absolute;
-    top:170px;
-    right: 110px;
+    top:160px;
+    right: 60px;
     font-size: 2rem;
   }
 }
@@ -504,28 +520,12 @@
   align-items: center;
   justify-content: space-between;
 }
-  .help-banner .btn.violet{
-    position: fixed;
-    margin-top: 3rem;
-    margin-left: 120rem;
-    float: right;
-    border-radius: 5rem;
-    font-size: 1.5rem;
-    font-weight: 600;
-    color: #f5f5f5;
-    background: #4C5FD5;
-    border: 1px solid #4C5FD5;
-    padding: .8rem 1.8rem;
-    align-items: center;
-  }
-
-  .help-banner .btn.violet:hover{
-    color: #ffffff;
-    background: #4C5FD5;
-    border: 1px solid #4C5FD5;
-  }
-
-  .help-banner .btn.violet i{
-    font-size: 2rem;
-    margin-right: 1rem;
-  }
+.btn.float {
+  color: #f5f5f5;
+  background: #4C5FD5;
+  padding: 1.2rem 2.2rem;
+  border-radius: 50px;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
